@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#first {
+    display: flex;
+}
+
+#first>p,
+#first>nav {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    column-gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #5f0de3;
+}
+
+#second {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9CC3B;
+}
+
+#second>h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#second>p {
+    width: 40%;
+    text-align: center;
+}
+
+#third,
+#fifth {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+
+
+.image_third {
+    background-image: url(images/perro2.webp);
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    background-size: contain;
+    background-color: #DFDED9;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image_third:nth-child(2) {
+    background-image: url(images/perro4.png);
+}
+
+.content_third {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.content_third>p:nth-child(2) {
+    font-weight: 600;
+}
+
+.content_third>p:nth-child(3) {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.content_third>p:nth-child(4)>span {
+    color: #5f0de3;
+}
+
+#fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    width: 799px;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.client {
+    background-image: url(images/perro3.webp);
+    background-size: contain;
+    background-position: center;
+    background-color: #DFDED9;
+    width: 200px;
+    height: 200px;
+}
+
+@media(max-width:830px) {
+    #second>p {
+        width: 90%;
+    }
+}
+
+@media(max-width:700px) {
+
+    #third,
+    #fifth {
+        height: fit-content;
+        flex-direction: column;
+        margin: 5vh 0px;
+    }
+
+    .content_third {
+        width: 90vw;
+        padding: 5vw;
+    }
+
+    #first {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #clients{
+        width: fit-content;
+        padding: 1rem;
+    }
+
+    .client{
+        width: 40vw;
+        height: 40vw;
+    }
+}
