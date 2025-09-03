@@ -27,6 +27,11 @@ body{
 
 a {
     text-decoration: none;
+    color: #5D4037;
+}
+
+#first>a {
+    text-decoration: none;
     color: #000000;
 }
 
@@ -35,27 +40,30 @@ a:hover {
 }
 
 #second {
-    height: 30vh;
+    height: 65vh;
+    width: 1800px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
     align-items: center;
     justify-content: center;
-    background-color: #FFC0CB;
+    background-image: url('https://sterlingsilverpremiumbeef.com/wp-content/uploads/2022/12/1720x564_Dec22_Article_1-scaled.jpg');
 }
 
 #second>h1 {
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: -2rem;
+    color: #5D4037;
 }
 
 #second>p {
     width: 40%;
     text-align: center;
+    color: #5D4037;
 }
 
-#third,
 #fifth {
     height: 55vh;
     display: flex;
@@ -65,42 +73,6 @@ a:hover {
 }
 
 
-
-.image_third {
-    background-image: url(images/perro2.webp);
-    border-radius: 50%;
-    height: 40vh;
-    width: 40vh;
-    background-size: contain;
-    background-color: #DFDED9;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.image_third:nth-child(2) {
-    background-image: url(images/perro4.png);
-}
-
-.content_third {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-}
-
-.content_third>p:nth-child(2) {
-    font-weight: 600;
-}
-
-.content_third>p:nth-child(3) {
-    font-weight: 300;
-    font-size: 2rem;
-}
-
-.content_third>p:nth-child(4)>span {
-    color: #5f0de3;
-}
-
 #fourth {
     display: flex;
     flex-direction: column;
@@ -108,7 +80,15 @@ a:hover {
     row-gap: 1rem;
 }
 
-#clients {
+#fourth > h1 {
+    margin-top: 2rem; /* Ajusta este valor para la separación que quieras */
+    font-size: 2rem;   /* tamaño más grande */
+    font-weight: 700;    /* opcional para que sea más negrita */
+    color: #5D4037;      /* opcional para que combine con tu paleta */
+    margin-bottom: 1.5rem; /* opcional para separar del contenido de abajo */
+}
+
+#popular1 {
     display: flex;
     flex-wrap: wrap;
     width: 799px;
@@ -116,6 +96,16 @@ a:hover {
     justify-content: center;
 
 }
+
+#popular2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 799px;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
 
 .client {
     background-image: url(images/perro3.webp);
@@ -151,7 +141,7 @@ a:hover {
         align-items: center;
     }
 
-    #clients{
+    #populares{
         width: fit-content;
         padding: 1rem;
     }
