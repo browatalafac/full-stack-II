@@ -224,6 +224,8 @@ a:hover {
     margin-top: 3rem;
     font-family: "Lato", sans-serif;
     border-top: 2px solid #d7b48c;
+    gap: 10rem;
+
 }
 
 .footer-content {

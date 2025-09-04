@@ -175,6 +175,7 @@ button.submit:hover {
     margin-top: 3rem;
     font-family: "Lato", sans-serif;
     border-top: 2px solid #d7b48c;
+    width: 100%;
 }
 
 .footer-content {
@@ -183,6 +184,7 @@ button.submit:hover {
     justify-content: space-around;
     gap: 2rem;
     padding-bottom: 1rem;
+    gap: 10rem;
 }
 
 .footer-section {
