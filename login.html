@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Fuentes Lato y Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="first_login">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+            <a href="#">Productos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Nuestras redes sociales</a>
+        </nav>
+    </section>
+    <form action="#" id="formulario">
+        <h1>Crear una cuenta</h1>
+        <div class="row">
+            <label for="nombres">Nombre</label>
+            <input type="text" id="nombres" placeholder="Juan Andres">
+        </div>
+        <div class="row">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" placeholder="Perez Muñoz">
+        </div>
+        <div class="row">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" placeholder="Los molles #25">
+        </div>
+        <div class="row">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="juanperez@gmail.com">
+        </div>
+        <div class="row">
+            <label for="clave1">Contraseña</label>
+            <input type="password" id="clave1" placeholder="Clave1234">
+        </div>
+        <div class="row">
+            <label for="clave2">Repetir contraseña</label>
+            <input type="password" id="clave2" placeholder="Clave1234">
+        </div>
+        <button type="reset" class="btn reset">Limpiar</button>
+        <button type="submit" class="btn submit">Enviar</button>
+        <p id="errores">&nbsp;</p>
+    </form>
+    <script src="login.js"></script>
+    
+     <footer id="pie_login">
+        <div class="footer-content">
+        <div class="footer-section contacto">
+            <h3>Contacto</h3>
+            <p>+56 9 1567 9890</p>
+            <p>contacto@mil-sabores.cl</p>
+            <p>Santiago, Chile</p>
+        </div>
+        <div class="footer-section enlaces">
+            <h3>Enlaces útiles</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="footer-section redes">
+            <h3>Síguenos</h3>
+            <p>Instagram: @mil_sabores</p>
+            <p>Facebook: Pastelería Mil Sabores</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+
+
+</body>
+
+</html>

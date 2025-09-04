@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+}
+
+#first_login {
+    display: flex;
+}
+
+#first_login>p,
+#first_login>nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    column-gap: 2rem;
+    background-color: #ffffff;
+    /*ajustar despues un color q pegue bonito*/
+}
+
+a {
+    text-decoration: none;
+    color: #5D4037;
+}
+
+#first_login:login>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+body {
+    background-color: #FFF5E1;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 70vw;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #d7ccc8;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    max-width: 900px;
+    margin-top: 8rem;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 1rem);
+    row-gap: 0.5rem;
+}
+
+label {
+    font-weight: 600;
+    color: #5D4037;
+}
+
+input {
+    height: 2.5rem;
+    padding: 0 .8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1.5px solid #8B4513;
+    outline: none;
+}
+
+button.btn {
+    width: calc(50% - 1rem);
+    height: 2.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+    color: #5D4037;
+}
+
+button.reset {
+    background-color: #FFE0E6;
+    /* Suave rosado */
+}
+
+button.reset:hover {
+    background-color: #ffccd5;
+}
+
+button.submit {
+    background-color: #FFC0CB;
+    /* Rosa suave */
+}
+
+button.submit:hover {
+    background-color: #f4a8b7;
+}
+
+.error {
+    outline: 2px solid red;
+}
+
+#errores {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #ff4d4d;
+    height: 4rem;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: .9rem;
+    animation: parpadear 1s infinite linear alternate;
+}
+
+@keyframes parpadear {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90vw;
+        padding: 1.5rem;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    button.btn {
+        width: 100%;
+    }
+}
+
+#pie_login {
+    background-color: #FFE0B2;
+    color: #5D4037;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+    font-family: "Lato", sans-serif;
+    border-top: 2px solid #d7b48c;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.footer-section h3 {
+    font-family: "Lato", cursive;;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+}
+
+.footer-section a {
+    color: #5D4037;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #BF360C;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #d7b48c;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}

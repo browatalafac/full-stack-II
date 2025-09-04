@@ -88,7 +88,7 @@ a:hover {
     width: 40%;
     font-size: 1.2rem;
     text-align: center;
-    color: #66463b;
+    color: #fcfbfa;
     text-align: left;
     position: relative;
     z-index: 2;
@@ -120,7 +120,6 @@ a:hover {
     margin-bottom: 1.5rem;
     font-family: "Lato", cursive;
 }
-
 #popular1 {
     display: flex;
     flex-wrap: wrap;
@@ -130,77 +129,56 @@ a:hover {
 
 }
 
-#popular1 {
+.pastel-item {
     display: flex;
-    flex-wrap: wrap;
-    width: 799px;
-    gap: 1rem;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-#popular2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 799px;
-    gap: 1rem;
-    justify-content: center;
-
+.pastel {
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
 }
+
+.pastel:hover {
+    transform: scale(1.05);
+}   
 
 .pastel1 {
-    background-image: url('https://i.pinimg.com/originals/e1/c9/93/e1c99332e2625d784a8bd3f6f4628eae.jpg'); /*torta cuadrada*/
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    background-image: url('https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg');
 }
 .pastel2 {
-    background-image: url('https://pasteleriatialucy.cl/627-home_default/futbol.jpg'); /*Torta Circular de Vainilla */
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    background-image: url('https://areademulher.r7.com/wp-content/uploads/2023/02/1-20.jpg'); /*tarea pa la casa ulises*/
 }
 .pastel3 {
-    background-image: url('https://areademulher.r7.com/wp-content/uploads/2023/02/1-20.jpg'); /*Mousse de Chocolate l*/
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); /*tarea pa la casa ulises*/
 }
 .pastel4 {
-    background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); /*Tarta de Santiago */
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    background-image: url('https://www.lomismoperosano.cl/wp-content/uploads/2022/01/receta-torta-panqueque-naranja.jpg'); /*tarea pa la casa ulises*/
 }
 .pastel5 {
-    background-image: url(images/perro3.webp); /*busca tu las otras me dio flojera*/
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+    background-image: url('https://rhenania.cl/wp-content/uploads/2020/12/CIRUELA-MANJAR-BLANCO.jpg'); /*tarea pa la casa ulises*/
 }
-.pastel6 {
-    background-image: url(images/perro3.webp);
-    background-size: cover;
-    background-position: center;
-    background-color: #DFDED9;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
+.pastel-name {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4E342E;
+    font-family: "Lato", sans-serif;
+}
+
+.pastel-price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e99fac;
+    font-family: "Lato", sans-serif;
+    margin-top: 0.2rem;
 }
 
 @media(max-width:830px) {
@@ -238,3 +216,57 @@ a:hover {
         height: 40vw;
     }
 }
+
+#pie {
+    background-color: #FFE0B2;
+    color: #5D4037;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+    font-family: "Lato", sans-serif;
+    border-top: 2px solid #d7b48c;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.footer-section h3 {
+    font-family: "Lato", cursive;;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+}
+
+.footer-section a {
+    color: #5D4037;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #BF360C;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #d7b48c;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+
+
