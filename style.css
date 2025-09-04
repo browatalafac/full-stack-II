@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     margin: 0;
     font-family: "Lato", sans-serif;
     font-size: large;
+}
+
+h1{
+    font-family: "Lato", cursive;
 }
 
 #first {
@@ -41,27 +46,54 @@ a:hover {
 
 #second {
     height: 65vh;
-    width: 1800px;
+    width: 90%;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-image: url('https://sterlingsilverpremiumbeef.com/wp-content/uploads/2022/12/1720x564_Dec22_Article_1-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 5%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-#second>h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-top: -2rem;
-    color: #5D4037;
+#second::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg,#000000 0%,#000000b9 30%,#00000071 50%,#0000004d 60%,#00000036 70%,#00000000 100%); /*esto hace una capa de degradado*/
+    z-index: 1;
+}
+
+#second>h1{
+    font-family: "Lato", cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #c4806b;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Z-index mayor q el before pa q no se le aplique a las letras el filtro oscuro */
+    max-width: 600px;
+    text-shadow: #0000004d 1px 1px 3px;
+    margin-bottom: 10px;
 }
 
 #second>p {
     width: 40%;
+    font-size: 1.2rem;
     text-align: center;
-    color: #5D4037;
+    color: #66463b;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+    text-shadow: #00000066 1px 1px 2px;
 }
 
 #fifth {
@@ -81,11 +113,21 @@ a:hover {
 }
 
 #fourth > h1 {
-    margin-top: 2rem; /* Ajusta este valor para la separación que quieras */
-    font-size: 2rem;   /* tamaño más grande */
-    font-weight: 700;    /* opcional para que sea más negrita */
-    color: #5D4037;      /* opcional para que combine con tu paleta */
-    margin-bottom: 1.5rem; /* opcional para separar del contenido de abajo */
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5D4037;
+    margin-bottom: 1.5rem;
+    font-family: "Lato", cursive;
+}
+
+#popular1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 799px;
+    gap: 1rem;
+    justify-content: center;
+
 }
 
 #popular1 {
@@ -106,12 +148,57 @@ a:hover {
 
 }
 
-
-.client {
-    background-image: url(images/perro3.webp);
-    background-size: contain;
+.pastel1 {
+    background-image: url('https://i.pinimg.com/originals/e1/c9/93/e1c99332e2625d784a8bd3f6f4628eae.jpg'); /*torta cuadrada*/
+    background-size: cover;
     background-position: center;
     background-color: #DFDED9;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.pastel2 {
+    background-image: url('https://pasteleriatialucy.cl/627-home_default/futbol.jpg'); /*Torta Circular de Vainilla */
+    background-size: cover;
+    background-position: center;
+    background-color: #DFDED9;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.pastel3 {
+    background-image: url('https://areademulher.r7.com/wp-content/uploads/2023/02/1-20.jpg'); /*Mousse de Chocolate l*/
+    background-size: cover;
+    background-position: center;
+    background-color: #DFDED9;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.pastel4 {
+    background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); /*Tarta de Santiago */
+    background-size: cover;
+    background-position: center;
+    background-color: #DFDED9;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.pastel5 {
+    background-image: url(images/perro3.webp); /*busca tu las otras me dio flojera*/
+    background-size: cover;
+    background-position: center;
+    background-color: #DFDED9;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+.pastel6 {
+    background-image: url(images/perro3.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: #DFDED9;
+    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
 }
