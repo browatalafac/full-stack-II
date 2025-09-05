@@ -11,25 +11,51 @@ h1{
     font-family: "Lato", cursive;
 }
 
-#first {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw; 
-    height: 7vh;
-    background-color: #ffffff;
-}
-
 body{
     background-color: #FFF5E1;
 }
 
-#first>p,
-#first>nav {
+#top-bar {
+    background-color: #FFF5E1;
+    color: #5D4037;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 5vw;
+    font-size: 0.9rem;
+}
+
+#top-bar .social-icons a {
+    color: #5D4037;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+#top-bar .social-icons a:hover {
+    color: #BF360C;
+}
+
+#first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 5vw;
+  background-color: #ffe6b4;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#search-bar {
     display: flex;
     align-items: center;
-    column-gap: 2rem; /* espacio entre links */
+    gap: 0.5rem;
 }
+
 a {
     text-decoration: none;
     color: #5D4037;
@@ -47,6 +73,7 @@ a:hover {
 #second {
     height: 65vh;
     width: 90%;
+    margin-top: 1rem;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
@@ -180,6 +207,24 @@ a:hover {
     font-family: "Lato", sans-serif;
     margin-top: 0.2rem;
 }
+
+.btn {
+  margin-top: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background: #e99fac;
+  color: white;
+  font-weight: 600;                         /*Botones d agregar al carrito*/
+  cursor: pointer;
+  transition: 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background: #c4806b;
+  transform: scale(1.05);
+}
+
 
 @media(max-width:830px) {
     #second>p {

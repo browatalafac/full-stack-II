@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
+    <div id="top-bar">
+        <p>Teléfono: +56 9 1567 9890</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
     <section id="first">
-        <nav>
+        <div class="nav-left">
             <a href="#">Inicio</a>
+            <a href="catalog.html">Catálogo</a>
             <a href="#">Noticias</a>
-            <a href="#">Nuestras redes sociales</a>
             <a href="blogs.html">Blogs</a>
+        </div>
+        <form id="search-bar">
+            <input type="text" placeholder="Buscar..." />
+            <button type="submit">🔍</button>
+        </form>
+        <div class="nav-right">
             <a href="login.html">Inicio de sesión</a>
             <a href="#" id="cart">🛒 Carrito</a>
-            <form id="search-bar">
-        <input type="text" placeholder="Buscar..." />
-            <button type="submsit">🔍</button>
-        </form>
-        
-        
-        <p>
-            +56 9 1567 9890
-        </p>
+        </div>
     </section>
+
     <section id="second">
         <h1>PASTELERIA MIL SABORES</h1>
         <p>
@@ -42,28 +49,32 @@
                 <div class="pastel pastel1"></div>
                 <p class="pastel-name">Torta cuadrada de Chocolate</p>
                 <p class="pastel-price">$45.000</p>
+                <button class="btn">Agregar al carrito</button>
             </div>
             <div class="pastel-item">
                 <div class="pastel pastel2"></div>
                 <p class="pastel-name">Torta cuadrada de frutas</p>
                 <p class="pastel-price">$50.000</p>
+                <button class="btn">Agregar al carrito</button>
             </div>
             <div class="pastel-item">
                 <div class="pastel pastel3"></div>
                 <p class="pastel-name">Tarta de Santiago</p>
-                <p class="pastel-price">$6000</p>
+                <p class="pastel-price">$6.000</p>
+                <button class="btn">Agregar al carrito</button>
             </div>
             <div class="pastel-item">
                 <div class="pastel pastel4"></div>
                 <p class="pastel-name">Tarta de naranja</p>
                 <p class="pastel-price">$48.000</p>
+                <button class="btn">Agregar al carrito</button>
             </div>
             <div class="pastel-item">
                 <div class="pastel pastel5"></div>
                 <p class="pastel-name">Tarta circular manjar</p>
                 <p class="pastel-price">$42.000</p>
+                <button class="btn">Agregar al carrito</button>
             </div>
-            
         </div>
     </section>
     <section id="fifth">        
