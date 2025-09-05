@@ -13,6 +13,11 @@ h1{
 
 #first {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw; 
+    height: 7vh;
+    background-color: #ffffff;
 }
 
 body{
@@ -21,15 +26,10 @@ body{
 
 #first>p,
 #first>nav {
-    width: 50vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 7vh;
-    column-gap: 2rem;
-    background-color: #ffffff; /*ajustar despues un color q pegue bonito*/
+    column-gap: 2rem; /* espacio entre links */
 }
-
 a {
     text-decoration: none;
     color: #5D4037;
@@ -86,7 +86,7 @@ a:hover {
 
 #second>p {
     width: 40%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: #fcfbfa;
     text-align: left;
@@ -154,7 +154,7 @@ a:hover {
     background-image: url('https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg');
 }
 .pastel2 {
-    background-image: url('https://areademulher.r7.com/wp-content/uploads/2023/02/1-20.jpg'); /*tarea pa la casa ulises*/
+    background-image: url('https://images.aws.nestle.recipes/original/2024_10_23T06_40_18_badun_images.badun.es_tarta_fria_de_chocolate_blanco_con_frutas.jpg'); /*tarea pa la casa ulises*/
 }
 .pastel3 {
     background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); /*tarea pa la casa ulises*/
