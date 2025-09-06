@@ -1,16 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-    box-sizing: border-box;
+a {
+    text-decoration: none;
+    color: #5D4037;
 }
 
+a:hover {
+    color: #8B4513;
+}
+
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+}
+
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
 body {
-    background-color: #FFF5E1;
+    background-color: #FFF5E1; /* color de respaldo */
+    background-image: url('https://img.freepik.com/vector-premium/fondo-degradado-color-pastel-desenfoque-suave-abstracto-banner-sitio-web-elemento-diseno-grafico_120819-1930.jpg');
+    background-repeat: no-repeat; /* no repetir */
+    background-size: cover; /* que cubra toda la pantalla */
+    background-position: center; /* centrado */
+    background-attachment: fixed; /* opcional: se queda fijo al hacer scroll */
     color: #5D4037;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
 }
 
 #top-bar {
@@ -21,6 +42,7 @@ body {
     background-color: #ffffff;
     font-size: 0.9rem;
     color: #5D4037;
+    height: 2.5vh;
 }
 
 #top-bar .social-icons a {
@@ -35,13 +57,15 @@ body {
 }
 
 #first {
-    display: flex;
+    display: flex
+;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5vw; 
-    height: 7vh;
-    background-color: #f4a8b7;
+    padding: 0.6rem 5vw;
+    background-color: #ffe6b4;
+    height: 4vh ;
 }
+
 
 .nav-left, .nav-right {
     display: flex;
@@ -132,6 +156,7 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px #0000001a;
     transition: transform 0.3s ease-in-out;
+    margin-left: 5vh;
 }
 
 .catalog-item:hover {
@@ -236,4 +261,55 @@ body {
     .catalog-category-title {
         font-size: 1.5rem;
     }
+}
+
+#pie {
+    background-color: #FFE0B2;
+    color: #5D4037;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+    font-family: "Lato", sans-serif;
+    border-top: 2px solid #d7b48c;
+    gap: 10rem;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.footer-section h3 {
+    font-family: "Lato", cursive;;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+}
+
+.footer-section a {
+    color: #5D4037;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #BF360C;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #d7b48c;
+    padding-top: 1rem;
+    font-size: 0.9rem;
 }

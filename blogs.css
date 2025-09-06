@@ -21,6 +21,7 @@ body {
   line-height: 1.6;
   background: #fffaf7;
   color: #333;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/013/248/703/non_2x/abstract-colorful-background-red-peach-green-yellow-beige-pink-spring-nature-pastel-summer-light-kids-happy-cream-color-gradiant-illustration-red-peach-green-yellow-beige-color-gradiant-background-vector.jpg');
 }
 
 /* Barra superior (copiada del index) */
@@ -90,7 +91,7 @@ header p {
   font-style: italic;
 }
 
-/* Main */
+
 main {
   padding: 2rem;
   display: grid;

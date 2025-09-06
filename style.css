@@ -42,6 +42,7 @@ body{
   align-items: center;
   padding: 0.6rem 5vw;
   background-color: #ffe6b4;
+  height: 4vh;
 }
 
 .nav-left, .nav-right {
@@ -50,10 +51,16 @@ body{
     align-items: center;
 }
 
-#search-bar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+#search-bar button {
+    margin-left: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #e99fac;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s 
+ease, transform 0.2s;
 }
 
 a {

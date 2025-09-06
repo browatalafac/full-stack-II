@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="car.css">
+</head>
+<body>
+
+  <section id="first">
+    <div class="nav-left">
+      <a href="index.html">Inicio</a>
+      <a href="catalog.html">Catálogo</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="#">Sobre nosotros</a>
+    </div>
+    <form id="search-bar">
+      <input type="text" placeholder="Buscar..." />
+      <button type="submit">🔍</button>
+    </form>
+    <div class="nav-right">
+      <a href="login.html">Inicio de sesión</a>
+      <a href="car.html" id="cart">🛒 Carrito</a>
+    </div>
+  </section>
+
+  <header class="cart-header">
+    <h1>🛍️ Tu Carrito</h1>
+    <p>Revisa los productos antes de comprar</p>
+  </header>
+
+  <main id="cart-container">
+    <section class="cart-items">
+
+
+      <div class="cart-item">
+        <img src="https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg" alt="Pastel de Chocolate">
+        <div class="item-info">
+          <h2>Pastel de Chocolate</h2>
+          <p class="price">$15.000</p>
+          <p class="desc">Delicioso pastel cubierto de chocolate amargo.</p>
+        </div>
+        <div class="item-actions">
+          <span class="quantity">x1</span>
+          <button class="remove-btn">✖</button>
+        </div>
+      </div>
+
+
+      <div class="cart-item">
+        <img src="https://images.aws.nestle.recipes/original/2024_10_23T06_40_18_badun_images.badun.es_tarta_fria_de_chocolate_blanco_con_frutas.jpg" alt="Tarta Fría">
+        <div class="item-info">
+          <h2>Tarta Fría de Frutas</h2>
+          <p class="price">$12.000</p>
+          <p class="desc">Tarta fresca con frutas y crema ligera.</p>
+        </div>
+        <div class="item-actions">
+          <span class="quantity">x2</span>
+          <button class="remove-btn">✖</button>
+        </div>
+      </div>
+
+    </section>
+
+    <aside class="cart-summary">
+      <h2>Resumen de compra</h2>
+      <p>Subtotal: <span>$39.000</span></p>
+      <p>Envío: <span>$3.000</span></p>
+      <hr>
+      <p class="total">Total: <span>$42.000</span></p>
+      <button class="checkout-btn">Finalizar Compra</button>
+    </aside>
+  </main>
+
+  
+     <footer id="pie">
+        <div class="footer-content">
+        <div class="footer-section contacto">
+            <h3>Contacto</h3>
+            <p>+56 9 1567 9890</p>
+            <p>contacto@mil-sabores.cl</p>
+            <p>Santiago, Chile</p>
+        </div>
+        <div class="footer-section enlaces">
+            <h3>Enlaces útiles</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Nuestras redes sociales</a>
+        </div>
+        <div class="footer-section redes">
+            <h3>Síguenos</h3>
+            <p>Instagram: @mil_sabores</p>
+            <p>Facebook: Pastelería Mil Sabores</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+    <script src="car.js"></script>
+
+</body>
+</html>
