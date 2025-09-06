@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Estilos generales */
 * {
     margin: 0;
+    padding: 0;
     font-family: "Lato", sans-serif;
-    font-size: large;
+    box-sizing: border-box;
 }
 
 a {
@@ -18,39 +18,47 @@ a:hover {
 }
 
 body {
-  line-height: 1.6;
-  background: #fffaf7;
-  color: #333;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/013/248/703/non_2x/abstract-colorful-background-red-peach-green-yellow-beige-pink-spring-nature-pastel-summer-light-kids-happy-cream-color-gradiant-illustration-red-peach-green-yellow-beige-color-gradiant-background-vector.jpg');
+    line-height: 1.6;
+    background: #FFF5E1;
+    color: #333;
 }
 
-/* Barra superior (copiada del index) */
+#top-bar {
+    background-color: #FFF5E1;
+    color: #5D4037;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 5vw;
+    font-size: 1rem;
+}
+
+#top-bar .social-icons a {
+    margin-left: 1rem;
+    color: #5D4037;
+    font-size: 1.2rem;
+}
+
+#top-bar .social-icons a:hover {
+    color: #8B4513;
+}
+
 #first {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5vw; 
-    height: 7vh;
-    background-color: #ffffff;
+    padding: 1rem 5vw;
+    background-color: #f8c8dc;
+    border-top: 2px solid #f4a8b7;
+    border-bottom: 2px solid #f4a8b7;
 }
 
-#first>p,
-#first>nav {
+.nav-left, .nav-right {
     display: flex;
     align-items: center;
     column-gap: 2rem;
 }
 
-#cart {
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  color: #5D4037;
-}
-#cart:hover {
-  color: #8B4513;
-}
-
-/* Buscador */
 #search-bar {
     display: flex;
     align-items: center;
@@ -66,31 +74,44 @@ body {
 
 #search-bar button {
     border: none;
-    background: #f4a8b7;
+    background: #e99fac;
     border-radius: 20px;
     padding: 0.3rem 0.8rem;
+    color: white;
     cursor: pointer;
+    transition: 0.3s ease, transform 0.2s;
 }
 
-/* Header */
+#search-bar button:hover {
+    background: #c4806b;
+    transform: scale(1.05);
+}
+
+#cart {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #5D4037;
+}
+#cart:hover {
+    color: #8B4513;
+}
+
 header {
-  text-align: center;
-  background: #f8c8dc;
-  padding: 2rem;
-  border-bottom: 3px solid #f4a8b7;
+    text-align: center;
+    background: #f4a8b7;
+    padding: 2rem;
 }
 
 header h1 {
   margin: 0;
   color: #5D4037;
-  font-family: "Lato", cursive;
+  font-family: "Pacifico", cursive;
 }
 
 header p {
   margin-top: 0.5rem;
   font-style: italic;
 }
-
 
 main {
   padding: 2rem;
@@ -138,15 +159,13 @@ article a:hover {
   background: #e58ca5;
 }
 
+/* 🔹 Footer */
 #pie {
     background-color: #FFE0B2;
     color: #5D4037;
     padding: 2rem 1rem 1rem 1rem;
     margin-top: 3rem;
-    font-family: "Lato", sans-serif;
     border-top: 2px solid #d7b48c;
-    gap: 10rem;
-
 }
 
 .footer-content {
@@ -165,7 +184,7 @@ article a:hover {
 }
 
 .footer-section h3 {
-    font-family: "Lato", cursive;;
+    font-family: "Pacifico", cursive;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #8B4513;

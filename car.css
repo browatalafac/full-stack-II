@@ -14,13 +14,11 @@ body {
   line-height: 1.6;
 }
 
-/* Barra de navegación */
 #first {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 5vw;
-  background-color: #ffe6b4;
 }
 
 .nav-left, .nav-right {
@@ -61,7 +59,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Encabezado carrito */
 .cart-header {
   text-align: center;
   background: #f8c8dc;
@@ -80,7 +77,6 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* Contenedor carrito */
 #cart-container {
   display: grid;
   grid-template-columns: 2fr 1fr;

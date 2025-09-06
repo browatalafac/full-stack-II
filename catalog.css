@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+}
+
 a {
     text-decoration: none;
     color: #5D4037;
@@ -10,27 +16,9 @@ a:hover {
     color: #8B4513;
 }
 
-* {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    font-size: large;
-}
-
-user agent stylesheet
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
 body {
-    background-color: #FFF5E1; /* color de respaldo */
-    background-image: url('https://img.freepik.com/vector-premium/fondo-degradado-color-pastel-desenfoque-suave-abstracto-banner-sitio-web-elemento-diseno-grafico_120819-1930.jpg');
-    background-repeat: no-repeat; /* no repetir */
-    background-size: cover; /* que cubra toda la pantalla */
-    background-position: center; /* centrado */
-    background-attachment: fixed; /* opcional: se queda fijo al hacer scroll */
+    background-color: #FFF5E1;
     color: #5D4037;
-    font-family: "Lato", sans-serif;
     line-height: 1.6;
 }
 
@@ -39,7 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 5vw;
-    background-color: #ffffff;
     font-size: 0.9rem;
     color: #5D4037;
     height: 2.5vh;
@@ -57,15 +44,15 @@ body {
 }
 
 #first {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 5vw;
-    background-color: #ffe6b4;
-    height: 4vh ;
+    padding: 1rem 5vw;
+    background-color: #f8c8dc;
+    height: 4vh;
+    border-top: 2px solid #f4a8b7;
+    border-bottom: 2px solid #f4a8b7;
 }
-
 
 .nav-left, .nav-right {
     display: flex;
@@ -101,40 +88,43 @@ body {
     transform: scale(1.05);
 }
 
-.catalog-header {
+header {
+    margin-top: .7px;
     text-align: center;
-    padding: 2rem 0;
+    background: #f4a8b7;
+    padding: 2rem;
 }
 
-.catalog-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #8B4513;
-}
-
-.catalog-header p {
-    font-size: 1.2rem;
+header h1 {
+    margin: 0;
     color: #5D4037;
+    font-family: "Pacifico", cursive;
 }
 
-.catalog-container {
+header p {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-.catalog-row {
+.row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-.catalog-row-last {
+.row-last {
     justify-content: center;
 }
 
-.catalog-category {
+.category {
+    margin-top: 2rem;
     width: 32%;
     display: flex;
     flex-direction: column;
@@ -142,15 +132,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.catalog-category-title {
+.category-title {
     font-size: 1.8rem;
     color: #8B4513;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.catalog-item {
-    background: #ffffff;
+.item {
+    background: #f4a8b7;
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -159,11 +149,11 @@ body {
     margin-left: 5vh;
 }
 
-.catalog-item:hover {
+.item:hover {
     transform: scale(1.05);
 }
 
-.catalog-img {
+.img {
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -173,15 +163,15 @@ body {
     background-color: #f8d7da;
 }
 
-.catalog-name {
+.name {
     font-weight: 700;
     color: #5D4037;
     margin-bottom: 0.2rem;
 }
 
-.catalog-price {
+.price {
     font-weight: 700;
-    color: #e99fac;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
@@ -207,7 +197,7 @@ body {
     border: none;
     border-radius: 25px;
     background: #e99fac;
-    color: white;
+    color: #5D4037;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -219,21 +209,21 @@ body {
 }
 
 @media(max-width: 1024px) {
-    .catalog-category {
+    .category {
         width: 48%;
     }
     
-    .catalog-row-last .catalog-category {
+    .row-last .category {
         width: 48%;
     }
 }
 
 @media(max-width: 768px) {
-    .catalog-category {
+    .category {
         width: 100%;
     }
     
-    .catalog-row-last .catalog-category {
+    .row-last .category {
         width: 100%;
     }
     
@@ -249,16 +239,16 @@ body {
 }
 
 @media(max-width: 480px) {
-    .catalog-img {
+    .img {
         width: 200px;
         height: 200px;
     }
     
-    .catalog-header h1 {
+    .header h1 {
         font-size: 2rem;
     }
     
-    .catalog-category-title {
+    .category-title {
         font-size: 1.5rem;
     }
 }
@@ -271,7 +261,6 @@ body {
     font-family: "Lato", sans-serif;
     border-top: 2px solid #d7b48c;
     gap: 10rem;
-
 }
 
 .footer-content {

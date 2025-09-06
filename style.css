@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.3rem 5vw;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 #top-bar .social-icons a {
@@ -37,12 +37,13 @@ body{
 }
 
 #first {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 5vw;
-  background-color: #ffe6b4;
-  height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw;
+    background-color: #f8c8dc;
+    border-top: 2px solid #f4a8b7;
+    border-bottom: 2px solid #f4a8b7;
 }
 
 .nav-left, .nav-right {
@@ -59,8 +60,7 @@ body{
     background-color: #e99fac;
     color: white;
     cursor: pointer;
-    transition: 0.3s 
-ease, transform 0.2s;
+    transition: 0.3s ease, transform 0.2s;
 }
 
 a {
@@ -319,8 +319,3 @@ a:hover {
     padding-top: 1rem;
     font-size: 0.9rem;
 }
-
-
-
-
-
