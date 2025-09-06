@@ -7,6 +7,14 @@
     font-size: large;
 }
 
+.nav-left .logo {
+    height: 50px;     
+    width: auto;       
+    vertical-align: middle;
+}
+
+
+
 a {
     text-decoration: none;
     color: #5D4037;
@@ -49,7 +57,7 @@ body {
     align-items: center;
     padding: 1rem 5vw;
     background-color: #f8c8dc;
-    height: 4vh;
+    height: 2vh;
     border-top: 2px solid #f4a8b7;
     border-bottom: 2px solid #f4a8b7;
 }
@@ -89,7 +97,7 @@ body {
 }
 
 header {
-    margin-top: .7px;
+    margin-top: -0.3px;
     text-align: center;
     background: #f4a8b7;
     padding: 2rem;
@@ -99,6 +107,7 @@ header h1 {
     margin: 0;
     color: #5D4037;
     font-family: "Pacifico", cursive;
+    font-size: 32px;
 }
 
 header p {
@@ -301,4 +310,26 @@ header p {
     border-top: 1px solid #d7b48c;
     padding-top: 1rem;
     font-size: 0.9rem;
+}
+
+
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e99fac; /* color acorde con tu diseño */
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -7,14 +7,22 @@
     font-size: large;
 }
 
-h1{
+.nav-left .logo {
+    height: 50px;     
+    width: auto;       
+    vertical-align: middle;
+}
+
+
+h1 {
     font-family: "Lato", cursive;
 }
 
-body{
+body {
     background-color: #FFF5E1;
 }
 
+/* ===== Top bar ===== */
 #top-bar {
     background-color: #FFF5E1;
     color: #5D4037;
@@ -36,12 +44,14 @@ body{
     color: #BF360C;
 }
 
+/* ===== Navbar principal ===== */
 #first {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5vw;
     background-color: #f8c8dc;
+    height: 2vh;
     border-top: 2px solid #f4a8b7;
     border-bottom: 2px solid #f4a8b7;
 }
@@ -50,6 +60,18 @@ body{
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar input {
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 #search-bar button {
@@ -63,13 +85,17 @@ body{
     transition: 0.3s ease, transform 0.2s;
 }
 
+#search-bar button:hover {
+    background-color: #c4806b;
+    transform: scale(1.05);
+}
+
 a {
     text-decoration: none;
     color: #5D4037;
 }
 
-#first>a {
-    text-decoration: none;
+#first > a {
     color: #000000;
 }
 
@@ -77,6 +103,7 @@ a:hover {
     color: #8B4513;
 }
 
+/* ===== Sección principal con imagen ===== */
 #second {
     height: 65vh;
     width: 90%;
@@ -101,44 +128,35 @@ a:hover {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(90deg,#000000 0%,#000000b9 30%,#00000071 50%,#0000004d 60%,#00000036 70%,#00000000 100%); /*esto hace una capa de degradado*/
+    background: linear-gradient(90deg,#000000 0%,#000000b9 30%,#00000071 50%,#0000004d 60%,#00000036 70%,#00000000 100%);
     z-index: 1;
 }
 
-#second>h1{
+#second > h1 {
     font-family: "Lato", cursive;
     font-size: 2.5rem;
     font-weight: normal;
     color: #c4806b;
     text-align: left;
     position: relative;
-    z-index: 2; /* Z-index mayor q el before pa q no se le aplique a las letras el filtro oscuro */
+    z-index: 2;
     max-width: 600px;
     text-shadow: #0000004d 1px 1px 3px;
     margin-bottom: 10px;
 }
 
-#second>p {
+#second > p {
     width: 40%;
     font-size: 1rem;
-    text-align: center;
-    color: #fcfbfa;
     text-align: left;
+    color: #fcfbfa;
     position: relative;
     z-index: 2;
     line-height: 1.6;
     text-shadow: #00000066 1px 1px 2px;
 }
 
-#fifth {
-    height: 55vh;
-    display: flex;
-    justify-content: center;
-    column-gap: 3rem;
-    align-items: center;
-}
-
-
+/* ===== Sección de productos ===== */
 #fourth {
     display: flex;
     flex-direction: column;
@@ -154,13 +172,13 @@ a:hover {
     margin-bottom: 1.5rem;
     font-family: "Lato", cursive;
 }
+
 #popular1 {
     display: flex;
     flex-wrap: wrap;
     width: 799px;
     gap: 1rem;
     justify-content: center;
-
 }
 
 .pastel-item {
@@ -182,102 +200,53 @@ a:hover {
 
 .pastel:hover {
     transform: scale(1.05);
-}   
+}
 
-.pastel1 {
-    background-image: url('https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg');
-}
-.pastel2 {
-    background-image: url('https://images.aws.nestle.recipes/original/2024_10_23T06_40_18_badun_images.badun.es_tarta_fria_de_chocolate_blanco_con_frutas.jpg'); /*tarea pa la casa ulises*/
-}
-.pastel3 {
-    background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); /*tarea pa la casa ulises*/
-}
-.pastel4 {
-    background-image: url('https://www.lomismoperosano.cl/wp-content/uploads/2022/01/receta-torta-panqueque-naranja.jpg'); /*tarea pa la casa ulises*/
-}
-.pastel5 {
-    background-image: url('https://rhenania.cl/wp-content/uploads/2020/12/CIRUELA-MANJAR-BLANCO.jpg'); /*tarea pa la casa ulises*/
-}
+.pastel1 { background-image: url('https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg'); }
+.pastel2 { background-image: url('https://images.aws.nestle.recipes/original/2024_10_23T06_40_18_badun_images.badun.es_tarta_fria_de_chocolate_blanco_con_frutas.jpg'); }
+.pastel3 { background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); }
+.pastel4 { background-image: url('https://www.lomismoperosano.cl/wp-content/uploads/2022/01/receta-torta-panqueque-naranja.jpg'); }
+.pastel5 { background-image: url('https://rhenania.cl/wp-content/uploads/2020/12/CIRUELA-MANJAR-BLANCO.jpg'); }
+
 .pastel-name {
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
     color: #4E342E;
-    font-family: "Lato", sans-serif;
 }
 
 .pastel-price {
     font-size: 1rem;
     font-weight: 700;
     color: #e99fac;
-    font-family: "Lato", sans-serif;
     margin-top: 0.2rem;
 }
 
 .btn {
-  margin-top: 0.6rem;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 25px;
-  background: #e99fac;
-  color: white;
-  font-weight: 600;                         /*Botones d agregar al carrito*/
-  cursor: pointer;
-  transition: 0.3s ease, transform 0.2s;
+    margin-top: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: #e99fac;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease, transform 0.2s;
 }
 
 .btn:hover {
-  background: #c4806b;
-  transform: scale(1.05);
+    background: #c4806b;
+    transform: scale(1.05);
 }
 
-
-@media(max-width:830px) {
-    #second>p {
-        width: 90%;
-    }
-}
-
-@media(max-width:700px) {
-
-    #third,
-    #fifth {
-        height: fit-content;
-        flex-direction: column;
-        margin: 5vh 0px;
-    }
-
-    .content_third {
-        width: 90vw;
-        padding: 5vw;
-    }
-
-    #first {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    #populares{
-        width: fit-content;
-        padding: 1rem;
-    }
-
-    .client{
-        width: 40vw;
-        height: 40vw;
-    }
-}
-
+/* ===== Footer ===== */
 #pie {
     background-color: #FFE0B2;
     color: #5D4037;
     padding: 2rem 1rem 1rem 1rem;
     margin-top: 3rem;
-    font-family: "Lato", sans-serif;
     border-top: 2px solid #d7b48c;
     gap: 10rem;
-
 }
 
 .footer-content {
@@ -296,7 +265,7 @@ a:hover {
 }
 
 .footer-section h3 {
-    font-family: "Lato", cursive;;
+    font-family: "Lato", cursive;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     color: #8B4513;
@@ -318,4 +287,40 @@ a:hover {
     border-top: 1px solid #d7b48c;
     padding-top: 1rem;
     font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:830px) {
+    #second > p {
+        width: 90%;
+    }
+}
+
+@media(max-width:700px) {
+    #third,
+    #fifth {
+        height: fit-content;
+        flex-direction: column;
+        margin: 5vh 0px;
+    }
+
+    .content_third {
+        width: 90vw;
+        padding: 5vw;
+    }
+
+    #first {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #populares {
+        width: fit-content;
+        padding: 1rem;
+    }
+
+    .client {
+        width: 40vw;
+        height: 40vw;
+    }
 }
