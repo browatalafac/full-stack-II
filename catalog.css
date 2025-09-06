@@ -185,22 +185,22 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.img-TC001 { background-image: url(''); }
-.img-TC002 { background-image: url(''); }
-.img-TT001 { background-image: url(''); }
-.img-TT002 { background-image: url(''); }
-.img-PI001 { background-image: url(''); }
-.img-PI002 { background-image: url(''); }
-.img-PSA001 { background-image: url(''); }
-.img-PSA002 { background-image: url(''); }
-.img-PT001 { background-image: url(''); }
-.img-PT002 { background-image: url(''); }
-.img-PG001 { background-image: url(''); }
-.img-PG002 { background-image: url(''); }
-.img-PV001 { background-image: url(''); }
-.img-PV002 { background-image: url(''); }
-.img-TE001 { background-image: url(''); }
-.img-TE002 { background-image: url(''); }
+.img-TC001 { background-image: url('https://tortasdelacasa.com/wp-content/uploads/2024/02/DSC4340-scaled.jpg'); }
+.img-TC002 { background-image: url('https://images.aws.nestle.recipes/original/2024_10_23T06_40_18_badun_images.badun.es_tarta_fria_de_chocolate_blanco_con_frutas.jpg'); }
+.img-TT001 { background-image: url('https://reposteriaflores.cl/wp-content/uploads/2016/11/maxresdefault.jpg'); }
+.img-TT002 { background-image: url('https://rhenania.cl/wp-content/uploads/2020/12/CIRUELA-MANJAR-BLANCO.jpg'); }
+.img-PI001 { background-image: url('https://www.elinasaiach.com/wp-content/uploads/2022/04/Mousse-Chocolate-3.jpg'); }
+.img-PI002 { background-image: url('https://recetasdecocina.elmundo.es/wp-content/uploads/2022/08/tiramisu-postre-italiano.jpg'); }
+.img-PSA001 { background-image: url('https://www.lomismoperosano.cl/wp-content/uploads/2022/01/receta-torta-panqueque-naranja.jpg'); }
+.img-PSA002 { background-image: url('https://www.hola.com/horizon/landscape/64c21cd97107-tarta-horno-queso-t.jpg'); }
+.img-PT001 { background-image: url('https://cdn7.kiwilimon.com/recetaimagen/1366/960x640/2229.jpg.jpg'); }
+.img-PT002 { background-image: url('https://jetextramar.com/wp-content/uploads/2021/11/tarta-de-santiago1-empresa-de-alimentos.jpg'); }
+.img-PG001 { background-image: url('https://www.surmontt.cl/101-tm_large_default/nutra-bien-brownie-sin-azucar-adicionada-50-g.jpg'); }
+.img-PG002 { background-image: url('https://levanova.es/wp-content/uploads/2021/07/pansingluten.png'); }
+.img-PV001 { background-image: url('https://luciapaula.com/wp-content/uploads/2023/01/Blog-1970-01-20-125839033.jpg'); }
+.img-PV002 { background-image: url('https://i.blogs.es/8792e6/galletas-avea-tahina-datiles/840_560.jpg'); }
+.img-TE001 { background-image: url('https://i.pinimg.com/originals/aa/a0/4f/aaa04fb61005c9fc6d748dee6eac76f3.jpg'); }
+.img-TE002 { background-image: url('https://i.pinimg.com/474x/3b/bc/bb/3bbcbb826b865e5278f53a5b2661c2e5.jpg'); }
 
 .btn {
     padding: 0.4rem 0.8rem;
