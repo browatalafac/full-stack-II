@@ -22,7 +22,6 @@ body {
     background-color: #FFF5E1;
 }
 
-/* ===== Top bar ===== */
 #top-bar {
     background-color: #FFF5E1;
     color: #5D4037;
@@ -44,7 +43,6 @@ body {
     color: #BF360C;
 }
 
-/* ===== Navbar principal ===== */
 #first {
     display: flex;
     justify-content: space-between;
@@ -103,7 +101,6 @@ a:hover {
     color: #8B4513;
 }
 
-/* ===== Sección principal con imagen ===== */
 #second {
     height: 65vh;
     width: 90%;
@@ -156,7 +153,6 @@ a:hover {
     text-shadow: #00000066 1px 1px 2px;
 }
 
-/* ===== Sección de productos ===== */
 #fourth {
     display: flex;
     flex-direction: column;
@@ -239,7 +235,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* ===== Footer ===== */
 #pie {
     background-color: #FFE0B2;
     color: #5D4037;
@@ -289,7 +284,6 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* ===== Responsive ===== */
 @media(max-width:830px) {
     #second > p {
         width: 90%;
